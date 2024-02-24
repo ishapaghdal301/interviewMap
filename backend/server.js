@@ -10,9 +10,6 @@ const connectDB = require('./src/config/db');
 const socketEvents = require('./socketEvents');
 
 const authRouter = require('./src/routes/authRouter');
-const testRouter = require('./src/routes/testRouter');
-const problemRouter = require('./src/routes/problemRouter');
-const compileRouter = require('./src/routes/compileRouter');
 
 dotenv.config();
 
@@ -36,9 +33,6 @@ app.use(bodyParser.json());
 connectDB();
 
 app.use('/api/auth', authRouter);
-app.use('/api/tests', testRouter);
-app.use('/api/problems', problemRouter);
-app.use('/api/compile', compileRouter);
 
 // Configure CORS for Socket.IO server
 const io = socketIo(server, {
