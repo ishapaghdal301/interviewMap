@@ -13,6 +13,7 @@ const authRouter = require('./src/routes/authRouter');
 const testRouter = require('./src/routes/testRouter');
 const problemRouter = require('./src/routes/problemRouter');
 const compileRouter = require('./src/routes/compileRouter');
+const meetingRouter = require('./src/routes/meetingRouter');
 
 dotenv.config();
 
@@ -39,6 +40,7 @@ app.use('/api/auth', authRouter);
 app.use('/api/tests', testRouter);
 app.use('/api/problems', problemRouter);
 app.use('/api/compile', compileRouter);
+app.use('/api/meeting', meetingRouter);
 
 // Configure CORS for Socket.IO server
 const io = socketIo(server, {
