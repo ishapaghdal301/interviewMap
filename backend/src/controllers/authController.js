@@ -192,7 +192,7 @@ const verifyOTPLogin = async (req, res) => {
 
         await user.save();
 
-        return res.status(200).json({ message: 'OTP verification successful', jwt_token: token });
+        return res.status(200).json(user);
     } catch (err) {
         console.error(err.message);
         res.status(500).send('Server Error');

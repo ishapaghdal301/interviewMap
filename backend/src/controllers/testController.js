@@ -52,9 +52,26 @@ const addProblem = async (req, res) => {
     }
 };
 
+const checkTestId = async (req, res) => {
+    const { id } = req.params;
+    try {
+        const test = await Test.findById(id);
+        if (!test) {
+            console.log('Test not found')
+            return res.status(404).json({ message: 'Test not found' });
+        }
+        res.status(201).json({message: 'TestId is correct' });
+        console.log('Test found')
+
+    } catch (error) {
+        res.status(400).json({ error: 'Failed to add problem to test' });
+    }
+};
+
 module.exports = {
     getAllTests,
     getTestById,
     createTest,
-    addProblem
+    addProblem,
+    checkTestId
 };
