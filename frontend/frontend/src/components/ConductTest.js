@@ -80,7 +80,7 @@ const ConductedTest = () => {
         };
 
         // Check full screen state every 5 seconds
-        const interval = setInterval(checkFullScreen, 15000);
+        const interval = setInterval(checkFullScreen, 1500);
 
         // Clean up interval on component unmount
         return () => clearInterval(interval);
