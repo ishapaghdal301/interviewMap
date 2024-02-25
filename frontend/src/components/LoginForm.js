@@ -2,6 +2,7 @@ import React, { useContext, useState } from 'react';
 import axios from 'axios';
 import Swal from 'sweetalert2';
 import { AppContext } from '../App';
+import '../assets/styles/style.css'
 
 const LoginForm = () => {
   const { setIsLoggedIn } = useContext(AppContext);
@@ -135,7 +136,7 @@ const LoginForm = () => {
       <div className="signup">
         <span className="signup">
           Don't have an account?
-          <a href="/">
+          <a href="/register">
             <label htmlFor="check">Signup</label>
           </a>
         </span>
