@@ -1,0 +1,149 @@
+.main1 {
+	display: flex;
+	height: calc(80vh - 50px);
+}
+
+.left-container1 {
+	position: relative;
+	flex: 60%;
+	height: calc(80vh - 50px);
+	display: flex;
+	align-items: center;
+	/* padding-left: 20px; */
+	color: #1f65e6;
+	/* Updated color */
+	gap: 20px;
+}
+
+.right-container1 {
+	flex: 40%;
+	height: calc(80vh - 50px);
+	display: flex;
+	flex-direction: column;
+	background-color: #242424;
+	border-left: 3px solid #1f65e6;
+	padding: 7px;
+
+}
+
+.input-box {
+	flex: 50%;
+}
+
+.input-box textarea {
+	font-size: 16px;
+}
+
+.spinner-box {
+	flex: 50%;
+	background-color: #242424;
+	overflow-y: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.spinner-box img {
+	width: 200px;
+}
+
+.output-box {
+	flex: 50%;
+	background-color: #242424;
+	overflow-y: auto;
+	color: white;
+	position: relative;
+}
+
+.clear-btn1 {
+	position: absolute;
+	bottom: 10px;
+	right: 18px;
+	width: 80px;
+	height: 40px;
+	font-size: 1em;
+	/* font-weight: bold; */
+	background-color: #1f65e6;
+	;
+	border: none;
+	border-radius: 4px;
+	transition: 0.3s;
+	cursor: pointer;
+	color: #f9f9f9;
+}
+
+.output-box pre {
+	font-size: 15px;
+	white-space: pre-wrap;
+}
+
+h3 {
+	color: #f9f9f9;
+	/* Updated color */
+}
+
+#code-inp {
+	box-sizing: border-box;
+	width: 100%;
+	height: 100%;
+	resize: none;
+	background-color: #242424;
+	color: whitesmoke;
+	padding: 5px;
+}
+
+#code-inp:focus {
+	outline: none;
+}
+
+.run-btn1 {
+	position: absolute;
+	bottom: 10px;
+	right: 18px;
+	width: 80px;
+	height: 40px;
+	font-size: 1 em;
+	/* font-weight: bold; */
+	background-color: #1f65e6;
+	;
+	border: none;
+	border-radius: 4px;
+	transition: 0.3s;
+	cursor: pointer;
+	color: #f9f9f9;
+}
+
+.submit-btn{
+	bottom: 10px;
+	right: 18px;
+	width: 100px;
+	height: 40px;
+	font-size: 1em;
+	/* font-weight: bold; */
+	background-color: #1f65e6;
+	;
+	border: none;
+	border-radius: 4px;
+	transition: 0.3s;
+	cursor: pointer;
+	color: #f9f9f9;
+	margin : 10px 10px 0 0 ;
+}
+.run-btn1:active {
+	background-color: #1f65e6;
+}
+
+.navbar-container {
+	display: flex;
+	padding: 10px;
+}
+
+/* Set each child to take up one-third of the available space */
+.navbar-container>* {
+	flex-basis: 33.33%;
+	padding: 0px 80px 0px 80px;
+}
+
+.compiler-container {
+	padding: 15px;
+}

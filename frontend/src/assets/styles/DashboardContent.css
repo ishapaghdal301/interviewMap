@@ -1,0 +1,37 @@
+.home-page {
+    margin: 30px;
+    display: flex;
+    align-items: center;
+    padding: 100px 100px 0 100px;
+}
+
+.content {
+    width: 60%;
+    padding: 0 120px 0 0;
+}
+
+.content h1 {
+    color: #161a28;
+}
+
+.content p {
+    line-height: 30px;
+    font-size: 1.2em;
+    word-spacing: 5px;
+    letter-spacing: .7px;
+    color: #7a91ab;
+}
+
+.image {
+    width: 40%;
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+}
+
+.cards {
+    padding: 150px;
+
+}
